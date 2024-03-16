@@ -58,6 +58,13 @@
             label = "BASH";
         };
 
+        helloworld: helloworld {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bash &kp E &kp C &kp H &kp O &kp SPACE &kp SQT &kp H &kp S &kp DOT &kp A &kp L &kp E &kp R &kp T &kp DOT &kp S &kp H &kp O &kp W &kp LPAR &kp DQT &kp LS(H) &kp E &kp L &kp L &kp O &kp DQT &kp RPAR &kp SQT &kp SPACE &kp PIPE &kp SPACE &kp H &kp S>;
+            label = "HELLOWORLD";
+        };
+
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
@@ -172,11 +179,11 @@
 
         zeus {
             bindings = <
-&bash   &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &tog 6  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&bash   &trans  &trans  &trans  &trans  &helloworld  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans      &trans  &trans  &tog 6  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans               &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
