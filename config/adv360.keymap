@@ -54,7 +54,7 @@
         bash: bash {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp F13>;
+            bindings = <&kp LC(LA(LG(B)))>;
             label = "BASH";
         };
 
