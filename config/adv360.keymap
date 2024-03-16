@@ -115,11 +115,11 @@
 
         bear_normal_mode {
             bindings = <
-&trans  &trans  &trans     &trans  &trans     &trans  &trans                                      &trans  &trans             &trans        &trans         &trans               &trans  &trans
-&trans  &trans  &trans     &trans  &kp LG(V)  &trans  &trans                                      &trans  &trans             &to 2         &kp LG(Z)      &kp LG(C)            &trans  &trans
-&trans  &trans  &trans     &trans  &trans     &dd     &trans  &trans  &trans      &trans  &trans  &trans  &mt LA(LEFT) LEFT  &kp LA(DOWN)  &mt LA(UP) UP  &mt LA(RIGHT) RIGHT  &vim_o  &trans
-&trans  &trans  &kp LG(X)  &trans  &trans     &trans                  &trans      &trans                  &trans             &trans        &trans         &trans               &trans  &trans
-&trans  &trans  &trans     &trans  &trans             &trans  &trans  &trans      &trans  &trans  &trans                     &trans        &trans         &trans               &trans  &trans
+&trans  &trans  &trans     &trans  &trans     &trans  &trans                                      &trans  &trans             &trans             &trans         &trans               &trans  &trans
+&trans  &trans  &trans     &trans  &kp LG(V)  &trans  &trans                                      &trans  &trans             &to 2              &kp LG(Z)      &kp LG(C)            &trans  &trans
+&trans  &trans  &trans     &trans  &trans     &dd     &trans  &trans  &trans      &trans  &trans  &trans  &mt LA(LEFT) LEFT  &mt LA(DOWN) DOWN  &mt LA(UP) UP  &mt LA(RIGHT) RIGHT  &vim_o  &trans
+&trans  &trans  &kp LG(X)  &trans  &trans     &trans                  &trans      &trans                  &trans             &trans             &trans         &trans               &trans  &trans
+&trans  &trans  &trans     &trans  &trans             &trans  &trans  &trans      &trans  &trans  &trans                     &trans             &trans         &trans               &trans  &trans
             >;
         };
 
