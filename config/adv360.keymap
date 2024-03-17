@@ -156,6 +156,41 @@
             key-positions = <32 31>;
             layers = <0>;
         };
+
+        c_prev_combo {
+            bindings = <&kp C_PREV>;
+            key-positions = <8 22>;
+        };
+
+        c_pp_combo {
+            bindings = <&kp C_PP>;
+            key-positions = <9 23>;
+        };
+
+        c_next_combo {
+            bindings = <&kp C_NEXT>;
+            key-positions = <24 10>;
+        };
+
+        c_mute {
+            bindings = <&kp C_MUTE>;
+            key-positions = <11 25>;
+        };
+
+        c_volume_down_combo {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <12 26>;
+        };
+
+        c_volume_up_combo {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <13 27>;
+        };
+
+        www {
+            bindings = <&kp K_WWW>;
+            key-positions = <16 18>;
+        };
     };
 
     keymap {
