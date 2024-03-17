@@ -135,6 +135,11 @@
             bindings = <&kp LA(LEFT_COMMAND)>;
             key-positions = <67 52>;
         };
+
+        QuickEntry {
+            bindings = <&kp LC(LA(SPACE))>;
+            key-positions = <15 17>;
+        };
     };
 
     keymap {
