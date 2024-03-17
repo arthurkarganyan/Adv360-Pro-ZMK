@@ -152,7 +152,7 @@
         };
 
         fn {
-            bindings = <&mo 5>;
+            bindings = <&mo 4>;
             key-positions = <32 31>;
             layers = <0>;
         };
