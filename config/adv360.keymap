@@ -158,6 +158,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <150>;
         };
+
+        ru_dot_behavior: ru_dot_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RU_DOT_BEHAVIOR";
+            bindings = <&kp>, <&ru_dot>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+        };
     };
 
     macros {
@@ -223,11 +232,11 @@
 
         default_layer {
             bindings = <
-&mt F1 EQUAL  &mt F2 NUMBER_1  &mt F3 NUMBER_2  &mt HASH N3  &kp N4            &kp N5  &mo 5                                                              &tog 4           &ru_comma_behavior N6 0  &kp N7    &kp N8     &kp N9   &kp N0     &kp MINUS
-&kp TAB       &kp Q            &kp W            &kp E        &kp R             &kp T   &kp CAPS                                                           &new_line_macro  &kp Y                    &kp U     &kp I      &kp O    &kp P      &kp BSLH
-&kp ESC       &kp A            &kp S            &kp D        &kp F             &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL            &delete_line     &kp H                    &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHFT     &kp Z            &kp X            &kp C        &kp V             &kp B                        &kp HOME      &kp PG_UP                                        &kp N                    &kp M     &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-&mo 4         &kp GRAVE        &kp LBKT         &kp RBKT     &kp LEFT_COMMAND          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &mt LG(ENTER) ENTER  &kp SPACE                                 &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT  &mo 4
+&mt F1 EQUAL  &mt F2 NUMBER_1  &mt F3 NUMBER_2  &mt HASH N3  &kp N4            &kp N5  &mo 5                                                              &tog 4           &ru_comma_behavior N6 0  &ru_dot_behavior N7 0  &kp N8     &kp N9   &kp N0     &kp MINUS
+&kp TAB       &kp Q            &kp W            &kp E        &kp R             &kp T   &kp CAPS                                                           &new_line_macro  &kp Y                    &kp U                  &kp I      &kp O    &kp P      &kp BSLH
+&kp ESC       &kp A            &kp S            &kp D        &kp F             &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL            &delete_line     &kp H                    &kp J                  &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT     &kp Z            &kp X            &kp C        &kp V             &kp B                        &kp HOME      &kp PG_UP                                        &kp N                    &kp M                  &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
+&mo 4         &kp GRAVE        &kp LBKT         &kp RBKT     &kp LEFT_COMMAND          &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &mt LG(ENTER) ENTER  &kp SPACE                                 &kp LEFT               &kp DOWN   &kp UP   &kp RIGHT  &mo 4
             >;
         };
 
