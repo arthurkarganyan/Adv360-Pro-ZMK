@@ -181,7 +181,7 @@
         };
 
         QuickEntry {
-            bindings = <&kp LC(LA(LG(R)))>;
+            bindings = <&kp F4>;
             key-positions = <15 17>;
         };
 
