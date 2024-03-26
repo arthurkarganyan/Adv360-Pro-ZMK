@@ -181,6 +181,13 @@
             #binding-cells = <0>;
             bindings = <&kp N7>, <&ru_comma>;
         };
+
+        del_key_dance: del_key_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DEL_KEY_DANCE";
+            #binding-cells = <0>;
+            bindings = <&sk LGUI>, <&kp LA(SPACE)>;
+        };
     };
 
     macros {
