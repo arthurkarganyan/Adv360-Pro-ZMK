@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -19,7 +20,7 @@
         emacs_run: emacs_run {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(X) &kp LC(K)>;
+            bindings = <&kt LCTRL &kp X &kp K &kt LCTRL>;
             label = "EMACS_RUN";
         };
 
