@@ -38,11 +38,11 @@
             bindings = <&sk ESC>, <&kp LA(SPACE)>;
         };
 
-        P_SHIFT_TAP: P_SHIFT_TAP {
+        enter_tap: enter_tap {
             compatible = "zmk,behavior-tap-dance";
-            label = "P_SHIFT_TAP";
+            label = "ENTER_TAP";
             #binding-cells = <0>;
-            bindings = <&kp P>, <&kp LS(P)>;
+            bindings = <&kp ENTER>, <&kp LS(P)>;
         };
     };
 
@@ -88,11 +88,11 @@
 
         default_layer {
             bindings = <
-&mt F1 EQUAL  &kp N1     &kp N2    &kp N3    &kp N4          &kp N5  &mo 4                                                               &tog 2     &kp NUMBER_6  &kp N7    &kp N8     &kp N9   &kp N0        &kp MINUS
-&kp TAB       &kp Q      &kp W     &kp E     &kp R           &kp T   &kp CAPS                                                            &none      &kp Y         &kp U     &kp I      &kp O    &P_SHIFT_TAP  &kp BSLH
-&kp ESC       &kp A      &kp S     &kp D     &kp F           &kp G   &none     &tog 1            &kp F3            &kp HOME   &kp END    &none      &kp H         &kp J     &kp K      &kp L    &kp SEMI      &kp SQT
-&kp LSHFT     &kp Z      &kp X     &kp C     &kp V           &kp B                               &kp LEFT_ALT      &kp PG_UP                        &kp N         &kp M     &kp COMMA  &kp DOT  &kp FSLH      &kp RSHIFT
-&mo 3         &kp GRAVE  &kp LBKT  &kp RBKT  &del_key_dance          &kp BSPC  &kp LEFT_COMMAND  &kp LCTRL         &kp PG_DN  &kp ENTER  &kp SPACE                &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT     &mo 3
+&mt F1 EQUAL  &kp N1     &kp N2    &kp N3    &kp N4          &kp N5  &mo 4                                                               &tog 2     &kp NUMBER_6  &kp N7    &kp N8     &kp N9   &kp N0     &kp MINUS
+&kp TAB       &kp Q      &kp W     &kp E     &kp R           &kp T   &kp CAPS                                                            &none      &kp Y         &kp U     &kp I      &kp O    &kp P      &kp BSLH
+&kp ESC       &kp A      &kp S     &kp D     &kp F           &kp G   &none     &tog 1            &kp F3            &kp HOME   &kp END    &none      &kp H         &kp J     &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT     &kp Z      &kp X     &kp C     &kp V           &kp B                               &kp LEFT_ALT      &kp PG_UP                        &kp N         &kp M     &kp COMMA  &kp DOT  &kp FSLH   &kp RSHIFT
+&mo 3         &kp GRAVE  &kp LBKT  &kp RBKT  &del_key_dance          &kp BSPC  &kp LEFT_COMMAND  &kp LCTRL         &kp PG_DN  &kp ENTER  &kp SPACE                &kp LEFT  &kp DOWN   &kp UP   &kp RIGHT  &mo 3
             >;
         };
 
